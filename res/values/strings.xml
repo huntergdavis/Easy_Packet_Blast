@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, EasyPacketBlast!</string>
+    <string name="app_name">Easy Packet Blast</string>
+    
+    	<string-array name="packetchunks">
+		<item>1 packet</item>
+		<item>10 packets</item>
+		<item>100 packets</item>
+		<item>1,000 packets</item>
+		<item>10,000 packets</item>
+		<item>100,000 packets</item>
+	</string-array>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<com.google.ads.AdView android:id="@+id/adView"
+		android:layout_alignParentTop="true" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" ads:adUnitId="a14e0e131258b32"
+		ads:adSize="BANNER" ads:loadAdOnCreate="true" />
+
+	<TableRow android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="50dip"
+		android:id="@+id/tableRow1" android:layout_below="@+id/tableRowText"
+		android:visibility="visible" android:layout_gravity="fill_horizontal|bottom">
+		<Button android:text="Send Packets" android:id="@+id/sendButton"
+			android:layout_width="fill_parent" android:layout_weight="1"
+			android:enabled="true" android:layout_height="wrap_content"></Button>
+		<Spinner android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:id="@+id/numberspin"
+			android:layout_weight="1" />
+
+	</TableRow>
+	<TableRow android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="50dip"
+		android:id="@+id/tableRow2" android:layout_below="@+id/tableRowText"
+		android:visibility="visible" android:layout_gravity="fill_horizontal|bottom">
+		<TextView android:text="Port Number" android:id="@+id/filenametext"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:gravity="right" android:layout_weight="1"></TextView>
+
+		<EditText android:layout_width="fill_parent" android:id="@+id/port"
+			android:text="21000" android:numeric="integer" android:layout_weight="1"></EditText>
+	</TableRow>
+	<TextView android:text="Destination:" android:id="@+id/destinationtext"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:gravity="left"></TextView>
+	<EditText android:layout_width="fill_parent" android:id="@+id/destination"
+		android:text="127.0.0.1" android:layout_height="wrap_content"></EditText>
+	<TextView android:text="Custom Payload:" android:id="@+id/payloadtext"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:gravity="left"></TextView>
+		
+	<EditText android:layout_width="fill_parent" android:id="@+id/payloadcustomtext"
+		android:text="" android:layout_height="fill_parent" android:textSize="14dp"
+		android:gravity="top|left" android:visibility="visible"
+		android:enabled="true"></EditText>
+
+
+</LinearLayout>
